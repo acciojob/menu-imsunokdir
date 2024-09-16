@@ -9,6 +9,7 @@ const Categories = ({ categories, filterItems }) => {
             key={i}
             className="cat-btn"
             id={`filter-btn-${i + 1}`}
+            data-test-id={`menu-item-${category}`}
             onClick={() => filterItems(category)}
           >
             {category}
