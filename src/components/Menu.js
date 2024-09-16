@@ -8,9 +8,9 @@ const Menu = ({ items }) => {
   return (
     <div className="menu-items">
       {items.map((menuItem) => {
-        const { id, title, img, desc, price } = menuItem;
+        const { id, title, img, desc, price, category } = menuItem;
         return (
-          <div className="menu-item">
+          <div className="menu-item" data-test-id={`menu-item-${category}`}>
             <div className="image">
               <img src={img} />
             </div>
