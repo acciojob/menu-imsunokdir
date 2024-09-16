@@ -11,7 +11,7 @@ const Menu = ({ items }) => {
         const { id, title, img, desc, price, category } = menuItem;
         return (
           <div
-            className="menu-item"
+            // className="menu-item"
             data-test-id={`menu-item-${category}`}
             key={id}
           >
