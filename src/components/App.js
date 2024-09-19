@@ -17,6 +17,7 @@ const App = () => {
         flexDirection: "column",
         alignItems: "center",
       }}
+      id="main"
     >
       <h1>Our Menu</h1>
       <div>
@@ -25,11 +26,16 @@ const App = () => {
           onClick={() => {
             handleClick("breakfast");
           }}
+          id="filter-btn-1"
         >
           Breakfast
         </button>
-        <button onClick={() => handleClick("lunch")}>Lunch</button>
-        <button onClick={() => handleClick("shakes")}>Shakes</button>
+        <button id="filter-btn-2" onClick={() => handleClick("lunch")}>
+          Lunch
+        </button>
+        <button id="filter-btn-3" onClick={() => handleClick("shakes")}>
+          Shakes
+        </button>
       </div>
       <div
         style={{
