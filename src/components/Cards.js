@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cards = ({ title, price, desc }) => {
+const Cards = ({ title, price, desc, category }) => {
   return (
     <div
       style={{
@@ -10,6 +10,7 @@ const Cards = ({ title, price, desc }) => {
         padding: "10px",
         marginTop: "30px",
       }}
+      data-test-id={`menu-item-${category}`}
     >
       <div style={{ border: "1px solid black" }}>
         <img src="" alt="no-image" />
